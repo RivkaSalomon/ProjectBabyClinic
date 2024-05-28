@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jyVO1Kf14Zp5YDokY5ke9b/ZbOX6bzLQ2nfkw+57BvP3DX5ujsnINtv3XA4DRPNDLrF43fi7Z7bdijzSxOf9dQ==",
+  "success": false,
+  "projectFilePath": "E:\\לרחלי כהן\\חיבור לdb בפרויקט הגדול\\שיעור 5 פרויקט שלי+api\\RestfulAPI\\Solid.Data\\Solid.Data.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer"
+    }
+  ]
+}
