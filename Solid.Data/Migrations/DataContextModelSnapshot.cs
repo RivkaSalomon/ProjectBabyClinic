@@ -30,13 +30,13 @@ namespace Solid.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("BabyIdId")
+                    b.Property<int>("BabyId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("NurseIdId")
+                    b.Property<int>("NurseId")
                         .HasColumnType("int");
 
                     b.Property<string>("Subject")
@@ -45,11 +45,11 @@ namespace Solid.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BabyIdId");
+                    b.HasIndex("BabyId");
 
-                    b.HasIndex("NurseIdId");
+                    b.HasIndex("NurseId");
 
-                    b.ToTable("li");
+                    b.ToTable("appointments");
                 });
 
             modelBuilder.Entity("RestfulAPI.Entities.Baby", b =>
@@ -69,7 +69,7 @@ namespace Solid.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("lbaby");
+                    b.ToTable("babis");
                 });
 
             modelBuilder.Entity("RestfulAPI.Entities.Nurse", b =>
@@ -92,26 +92,24 @@ namespace Solid.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ln");
+                    b.ToTable("nurses");
                 });
 
             modelBuilder.Entity("RestfulAPI.Entities.Appointment", b =>
                 {
-                    b.HasOne("RestfulAPI.Entities.Baby", "BabyId")
+                    b.HasOne("RestfulAPI.Entities.Baby", "Baby")
                         .WithMany("Appointments")
-                        .HasForeignKey("BabyIdId")
+                        .HasForeignKey("BabyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RestfulAPI.Entities.Nurse", "NurseId")
+                    b.HasOne("RestfulAPI.Entities.Nurse", null)
                         .WithMany("Appointments")
-                        .HasForeignKey("NurseIdId")
+                        .HasForeignKey("NurseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("BabyId");
-
-                    b.Navigation("NurseId");
+                    b.Navigation("Baby");
                 });
 
             modelBuilder.Entity("RestfulAPI.Entities.Baby", b =>

@@ -17,7 +17,7 @@ namespace Solid.Data.Repositories
         }
         public Baby AddBaby(Baby baby)
         {
-            _context.lbaby.Add(baby);
+            _context.babis.Add(baby);
             _context.SaveChanges();
             return baby;
         }
@@ -29,22 +29,22 @@ namespace Solid.Data.Repositories
         public void DeleteBaby(int id)
         {
             var baby = GetById(id);
-            _context.lbaby.Remove(baby);
+            _context.babis.Remove(baby);
             _context.SaveChanges();
         }
         public Baby GetById(int id)
         {
-            return _context.lbaby.ToList().Find(u => u.Id == id);
+            return _context.babis.ToList().Find(u => u.Id == id);
         }
 
         public IEnumerable<Baby> GetBabies()
         {
-            return _context.lbaby.ToList();
+            return _context.babis.ToList();
         }
        
         public Baby UpdateBaby(int id, Baby baby)
         {
-            var updateUser = _context.lbaby.ToList().Find(u => u.Id == id);
+            var updateUser = _context.babis.ToList().Find(u => u.Id == id);
 
             updateUser.Age = baby.Age;
             updateUser.Name = baby.Name;

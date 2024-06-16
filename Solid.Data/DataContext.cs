@@ -5,11 +5,11 @@ namespace Solid.Data
 {
     public class DataContext:DbContext
     {
-        public DbSet<Appointment> li { get; set; }
+        public DbSet<Appointment> appointments { get; set; }
 
-        public DbSet<Baby> lbaby { get; set; }
+        public DbSet<Baby> babis { get; set; }
        // public int Count = 0;
-        public DbSet<Nurse> ln { get; set; }
+        public DbSet<Nurse> nurses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

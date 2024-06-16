@@ -17,7 +17,7 @@ namespace Solid.Data.Repositories
         }
         public Nurse AddNurse(Nurse nurse)
         {
-            _context.ln.Add(nurse);
+            _context.nurses.Add(nurse);
             _context.SaveChanges();
             return nurse;
         }
@@ -25,25 +25,25 @@ namespace Solid.Data.Repositories
         public void DeleteNurse(int id)
         {
             var nurse = GetById(id);
-            _context.ln.Remove(nurse);
+            _context.nurses.Remove(nurse);
             _context.SaveChanges();
            // _context.ln.Remove(_context.ln.ToList().Find(u => u.Id == id));
         }
 
         public Nurse GetById(int id)
         {
-            return _context.ln.ToList().Find(u => u.Id == id);
+            return _context.nurses.ToList().Find(u => u.Id == id);
 
         }
 
         public IEnumerable<Nurse> GetAll()
         {
-            return _context.ln.ToList();
+            return _context.nurses.ToList();
         }
 
         public Nurse UpdateNurse(int id, Nurse nurse)
         {
-            var updateUser = _context.ln.ToList().Find(u => u.Id == id);
+            var updateUser = _context.nurses.ToList().Find(u => u.Id == id);
             updateUser.Price = nurse.Price;
             updateUser.Name = nurse.Name;
             _context.SaveChanges();

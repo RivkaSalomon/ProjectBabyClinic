@@ -9,9 +9,11 @@ namespace RestfulAPI.Models
         public string Subject { get; set; }
         // public int Id { get; set; }
       
-        public Baby BabyId { get; set; }
-    
+       public Baby Baby { get; set; }
+        public int BabyId { get; set; }
 
-        public Nurse NurseId { get; set; }
+        public int NurseId { get; set; }
+
+       // public Nurse Nurse { get; set; }
     }
 }

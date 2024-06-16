@@ -15,11 +15,11 @@ namespace Solid.Core.DTOs
         public string Subject { get; set; }
         
         public int Id { get; set; }
-        [ForeignKey("babyId")]
-        public BabyDto BabyId { get; set; }
-        [ForeignKey("nurseId")]
+       // [ForeignKey("babyId")]
+        public BabyDto Baby { get; set; }
+        //[ForeignKey("nurseId")]
 
-        public NurseDto NurseId { get; set; }
+        public NurseDto Nurse{ get; set; }
 
 
     }

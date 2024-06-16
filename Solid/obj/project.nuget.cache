@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "EBR19sxJ7tZX8JbY+pFndHOaqMt/S2mYburlX/PDio8Y1XPL5DG8LWn55bAiJaXLhd31wu3ng6cgr8y1q/ccAw==",
+  "dgSpecHash": "dtU6tdW5rQqdXIC1EhNe8kGsgATBA5BeBFaGoBEtXV+a7iithIqk+sA4l/XsOGWilIW31g5n1NVXlxEKIaqRxg==",
   "success": true,
-  "projectFilePath": "Y:\\Groups\\Group_5\\סלומון  רבקה\\דוטנט\\חיבור לdb בפרויקט הגדול\\שיעור 5 פרויקט שלי+api\\RestfulAPI\\Solid\\Solid.Core.csproj",
+  "projectFilePath": "D:\\Rivki\\לרחלי כהן\\חיבור לdb בפרויקט הגדול\\שיעור 5 פרויקט שלי+api\\RestfulAPI\\Solid\\Solid.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hitmachut\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
-    "C:\\Users\\hitmachut\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\user1\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
